@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/7871/7871142.png"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Job Dashboard</title>
+  </head>
+  <body>
+    <section class="dashboard">
+      <div class="header-container">
+        <h1 class="site-name"><i class="fas fa-briefcase"></i> Job Tracker</h1>
+        <p class="subtitle">Manage your job applications efficiently</p>
+      </div>
+
+      <div class="dashboard-cards">
+        <div class="dash-card">
+          <div class="card-icon total-icon">
+            <i class="fas fa-list"></i>
+          </div>
+          <div class="card-content">
+            <h3>Total Jobs</h3>
+            <p id="totalCount" class="card-count">0</p>
+          </div>
+        </div>
+
+        <div class="dash-card">
+          <div class="card-icon interview-icon">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <div class="card-content">
+            <h3>Interview</h3>
+            <p id="interviewCount" class="card-count">0</p>
+          </div>
+        </div>
+
+        <div class="dash-card">
+          <div class="card-icon rejected-icon">
+            <i class="fas fa-times-circle"></i>
+          </div>
+          <div class="card-content">
+            <h3>Rejected</h3>
+            <p id="rejectedCount" class="card-count">0</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jobs Section -->
+    <section class="jobs-section">
+      <div class="section-header">
+        <div>
+          <h2><i class="fas fa-briefcase-open"></i> Job Opportunities</h2>
+          <span id="sectionCount" class="job-count">0 Jobs</span>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <button class="tab active" data-tab="all">
+          <i class="fa-solid fa-list"></i>All Jobs
+        </button>
+        <button class="tab" data-tab="interview">
+          <i class="fas fa-video"></i> Interview
+        </button>
+        <button class="tab" data-tab="rejected">
+          <i class="fas fa-ban"></i> Rejected
+        </button>
+      </div>
+
+      <div id="jobContainer" class="job-container"></div>
+
+      <div id="emptyState" class="empty-state hidden">
+        <div class="empty-icon">
+          <i class="fa-regular fa-eye-slash"></i>
+        </div>
+        <h3>No jobs Available</h3>
+        <p>Please check another tab or update job status.</p>
+      </div>
+    </section>
+    <script src="./JavaScript/script.js"></script>
+  </body>
+</html>
