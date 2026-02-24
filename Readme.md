@@ -1,6 +1,6 @@
 # Here is the five Answers of Challenge part.
 
-#1- What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll
+# 1- What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll
 
 ##Answer:
 getElementById()
@@ -33,7 +33,7 @@ querySelectorAll()
 const allItems = document.querySelectorAll(".item");
 (In modern projects, most developers prefer querySelector and querySelectorAll because they’re flexible and consistent.)
 
-#2- How do you create and insert a new element into the DOM.
+# 2- How do you create and insert a new element into the DOM.
 
 ## Answer
 When I want to create and insert a new element, I follow three basic steps.
@@ -58,7 +58,7 @@ container.append(newDiv);
 
 So the overall flow is: create - customize - insert.
 
-#3- What is Event Bubbling? And how does it work.
+# 3- What is Event Bubbling? And how does it work.
 
 ## Answer
 Event bubbling means when an event happens on a child element, it automatically moves up through its parent elements.
@@ -81,10 +81,11 @@ If I click the button, first "Child clicked" will log, then "Parent clicked".
 
 That happens because the event starts at the target element and then bubbles up to its parent, then grandparent, and so on.
 
-#4- What is Event Delegation in JavaScript? Why is it useful.
+# 4- What is Event Delegation in JavaScript? Why is it useful.
 
 ## Answer
 Event delegation is a technique where instead of adding event listeners to multiple child elements, we add a single event listener to their parent.
+
 Example:
 
 document.getElementById("list").addEventListener("click", function (e) {
@@ -102,7 +103,7 @@ This is useful because:
 
 Even if new <li> elements are added later, the event still works because of bubbling.
 
-#5 - What is the difference between preventDefault() and stopPropagation() methods.
+# 5 - What is the difference between preventDefault() and stopPropagation() methods.
 
 ##Answer
 These two methods are often confused, but they do different things.
