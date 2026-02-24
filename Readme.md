@@ -105,7 +105,8 @@ Even if new <li> elements are added later, the event still works because of bubb
 
 # 5 - What is the difference between preventDefault() and stopPropagation() methods.
 
-##Answer
+## Answer
+
 These two methods are often confused, but they do different things.
 preventDefault()
 This method stops the browser’s default behavior.
